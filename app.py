@@ -6,10 +6,10 @@ st.title("Streamlit Condition Tree Example")
 
 # Initial dataframe
 df = pd.DataFrame({
-    'First Name': ['Georges', 'Alfred'],
-    'Age': [45, 98],
-    'Favorite Color': ['Green', 'Red'],
-    'Like Tomatoes': [True, False]
+    'First Name': ['Georges', 'Alfred', 'Dieter'],
+    'Age': [45, 98, 17],
+    'Favorite Color': ['Green', 'Red', 'Yellow'],
+    'Like Tomatoes': [True, False, True]
 })
 
 st.write("Initial DataFrame:")
