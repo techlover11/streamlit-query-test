@@ -25,7 +25,9 @@ st.write("Query String:")
 st.write(query_string)
 
 # Filtered dataframe
-df_filtered = df.query(query_string)
-
-st.write("Filtered DataFrame:")
-st.write(df_filtered)
+if query_string:
+    df_filtered = df.query(query_string)
+    st.write("Filtered DataFrame:")
+    st.write(df_filtered)
+else:
+    st.write("No query string generated. Please define conditions using the condition tree.")
