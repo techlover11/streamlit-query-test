@@ -4,6 +4,7 @@ from streamlit_condition_tree import condition_tree, config_from_dataframe
 
 st.title("Streamlit Condition Tree Example")
 
+'''
 # Initial dataframe
 df = pd.DataFrame({
     'First Name': ['Georges', 'Alfred', 'Dieter'],
@@ -11,6 +12,11 @@ df = pd.DataFrame({
     'Favorite Color': ['Green', 'Red', 'Yellow'],
     'Like Tomatoes': [True, False, True]
 })
+'''
+
+jobtitles_csv = 'https://digital-business.net/wp-content/uploads/2024/02/240210_job_titles_v2.csv'
+# Read the CSV file into a pandas dataframe
+df = pd.read_csv(jobtitles_csv, sep=';')
 
 st.write("Initial DataFrame:")
 st.write(df)
